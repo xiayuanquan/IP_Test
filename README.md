@@ -13,13 +13,12 @@
    
 ### 方法一：单独创建一个c文件，写一套方法去获取,效果图如下：
 
-![image](https://github.com/xiayuanquan/IP_Test/blob/master/test1.png)
-
+![image](https://github.com/xiayuanquan/IP_Test/blob/master/source/test1.png)
 ### 方法二：直接在ViewController.m中写获取ip地址的方法，该方法简单，而且能实时监测IP地址的变化，效果图如下：
 
     stackoverflow参考地址为:http://stackoverflow.com/questions/7072989/iphone-ipad-how-to-get-my-ip-address-programmatically
     
-![image](https://github.com/xiayuanquan/IP_Test/blob/master/test2.png)
+![image](https://github.com/xiayuanquan/IP_Test/blob/master/source/test2.png)
     
 
 
