@@ -28,10 +28,10 @@
      #import"IPManager.h"
      
 ### 方式一：此方法获取具体的ip地址
-      
-      IPToolManager *ipManager = [IPToolManager sharedManager];
-      
-      NSLog(@"当前设备的ip地址：%@",[ipManager currentIpAddress]);
+
+     IPToolManager *ipManager = [IPToolManager sharedManager];
+     
+     NSLog(@"当前设备的ip地址：%@",[ipManager currentIpAddress]);
       
 ### 方式二：此方法打印具体的ip详细信息
      
