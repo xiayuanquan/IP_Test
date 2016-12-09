@@ -17,6 +17,8 @@
 		E4D2DDAF1DFA7CBC0079A678 /* IPAddress.c in Sources */ = {isa = PBXBuildFile; fileRef = E4D2DDAD1DFA7CBC0079A678 /* IPAddress.c */; };
 		E4D2DDB51DFA7FCA0079A678 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D2DDB21DFA7FCA0079A678 /* AppDelegate.m */; };
 		E4D2DDB61DFA7FCA0079A678 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D2DDB41DFA7FCA0079A678 /* ViewController.m */; };
+		E4D2DDBA1DFA81830079A678 /* test1.png in Resources */ = {isa = PBXBuildFile; fileRef = E4D2DDB81DFA81830079A678 /* test1.png */; };
+		E4D2DDBB1DFA81830079A678 /* test2.png in Resources */ = {isa = PBXBuildFile; fileRef = E4D2DDB91DFA81830079A678 /* test2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		E4D2DDB21DFA7FCA0079A678 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E4D2DDB31DFA7FCA0079A678 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E4D2DDB41DFA7FCA0079A678 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E4D2DDB81DFA81830079A678 /* test1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test1.png; sourceTree = "<group>"; };
+		E4D2DDB91DFA81830079A678 /* test2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 		044662B71D38CEC50023A579 /* IP_Test */ = {
 			isa = PBXGroup;
 			children = (
+				E4D2DDB71DFA81830079A678 /* source */,
 				E4D2DDA91DFA7C4F0079A678 /* IPTool */,
 				E4D2DDB01DFA7FCA0079A678 /* SimpleDemo */,
 				044662B81D38CEC50023A579 /* Supporting Files */,
@@ -164,6 +169,15 @@
 				E4D2DDB41DFA7FCA0079A678 /* ViewController.m */,
 			);
 			path = SimpleDemo;
+			sourceTree = "<group>";
+		};
+		E4D2DDB71DFA81830079A678 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				E4D2DDB81DFA81830079A678 /* test1.png */,
+				E4D2DDB91DFA81830079A678 /* test2.png */,
+			);
+			path = source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +285,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				044662C81D38CEC50023A579 /* LaunchScreen.storyboard in Resources */,
+				E4D2DDBB1DFA81830079A678 /* test2.png in Resources */,
+				E4D2DDBA1DFA81830079A678 /* test1.png in Resources */,
 				044662C51D38CEC50023A579 /* Assets.xcassets in Resources */,
 				044662C31D38CEC50023A579 /* Main.storyboard in Resources */,
 			);
