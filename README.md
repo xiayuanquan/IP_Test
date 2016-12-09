@@ -14,6 +14,7 @@
 ### 方法一：单独创建一个c文件，写一套方法去获取,效果图如下：
 
 ![image](https://github.com/xiayuanquan/IP_Test/blob/master/IP_Test/source/test1.png)
+
 ### 方法二：直接在ViewController.m中写获取ip地址的方法，该方法简单，而且能实时监测IP地址的变化，效果图如下：
 
     stackoverflow参考地址为:http://stackoverflow.com/questions/7072989/iphone-ipad-how-to-get-my-ip-address-programmatically
@@ -24,12 +25,12 @@
 
 ### How to user api 
   
-      #import"IPManager.h"
-      //方法一：此方法获取具体的ip地址
-      IPToolManager *ipManager = [IPToolManager sharedManager];
-      NSLog(@"当前设备的ip地址：%@",[ipManager currentIpAddress]);
-      
-      
-      //方法二：此方法打印具体的ip详细信息
-      IPToolManager *ipManager = [IPToolManager sharedManager];
-      [ipManager currentIPAdressDetailInfo];
+     #import"IPManager.h"
+     
+     //方法一：此方法获取具体的ip地址
+     IPToolManager *ipManager = [IPToolManager sharedManager];
+     NSLog(@"当前设备的ip地址：%@",[ipManager currentIpAddress]);
+      
+     //方法二：此方法打印具体的ip详细信息
+     IPToolManager *ipManager = [IPToolManager sharedManager];
+     [ipManager currentIPAdressDetailInfo];
