@@ -1,5 +1,5 @@
 # IP_Test
-测试获取设别当前的IP地址
+## 测试获取设别当前的IP地址
 -----------------------
 
     有的时候，我们项目上线后，需要根据ip地址去统计不同地区的用户情况，此时IP地址的收取显得尤其重要，一般情况下，在用户登录时去获取用户的ip是准确的，当然实时追踪ip的变化而统计是更安全可靠的。
@@ -8,7 +8,7 @@
     IPv6是128位地址长度
 
 
-下面有两个方法，可供使用，如下：
+## 获取ip地址用到了有两套方法，如下：
 -----------------------
    
 ### 方法一：单独创建一个c文件，写一套方法去获取,效果图如下：
@@ -19,6 +19,17 @@
     stackoverflow参考地址为:http://stackoverflow.com/questions/7072989/iphone-ipad-how-to-get-my-ip-address-programmatically
     
 ![image](https://github.com/xiayuanquan/IP_Test/blob/master/IP_Test/source/test2.png)
-    
 
+## 现在做了一下简单的封装，封装为工具类IPManager，现在只需要导入这个头文件就可以轻松获取设备的ip地址
 
+### How to user api 
+  
+      #import"IPManager.h"
+      //方法一：此方法获取具体的ip地址
+      IPToolManager *ipManager = [IPToolManager sharedManager];
+      NSLog(@"当前设备的ip地址：%@",[ipManager currentIpAddress]);
+      
+      
+      //方法二：此方法打印具体的ip详细信息
+      IPToolManager *ipManager = [IPToolManager sharedManager];
+      [ipManager currentIPAdressDetailInfo];
