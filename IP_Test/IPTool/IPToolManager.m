@@ -1,19 +1,12 @@
 //
-//  ViewController.m
-//  IP_Test
+//  IPToolManager.m
+//  BiaoJiePay
 //
-//  Created by mac on 16/7/15.
+//  Created by mac on 16/11/22.
 //  Copyright © 2016年 xiayuanquan. All rights reserved.
 //
 
-#import "ViewController.h"
-
-
-//#import "IPAddress.h" //方法一
-
-
-
- //方法二
+#import "IPToolManager.h"
 #include <ifaddrs.h>
 #include <arpa/inet.h>
 #include <net/if.h>
@@ -24,52 +17,29 @@
 #define IP_ADDR_IPv6    @"ipv6"
 
 
-
-@interface ViewController ()
-
-@end
-
-@implementation ViewController
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-//    [self getIPAddress]; //方法一
-    NSLog(@"%@",[self getIPAddress:YES]); //方法二
-    
-}
-
 #pragma mark IPv4是32位地址长度
 #pragma mark IPv6是128位地址长度
 
-//=============================================================方法一=================================
-//- (void)getIPAddress
-//{
-//    InitAddresses();
-//    GetIPAddresses();
-//    GetHWAddresses();
-//    
-//    int i;
-//    //    NSString *deviceIP = nil;
-//    for (i=0; i<MAXADDRS; ++i)
-//    {
-//        static unsigned long localHost = 0x7F000001;            // 127.0.0.1
-//        unsigned long theAddr;
-//        
-//        theAddr = ip_addrs[i];
-//        
-//        if (theAddr == 0) break;
-//        if (theAddr == localHost) continue;
-//        
-//        NSLog(@"Name: %s  MAC: %s  IP: %s\n", if_names[i], hw_addrs[i], ip_names[i]);
-//    }
-//}
+
+@implementation IPToolManager
+
++(instancetype)sharedManager{
+    static dispatch_once_t onceToken;
+    static IPToolManager *instance = nil;
+    dispatch_once(&onceToken, ^{
+        instance = [[IPToolManager alloc] init];
+    });
+    return instance;
+}
 
 
 
+#pragma mark - 方法一
 
-
-//=============================================================方法二=================================
+-(NSString *)currentIpAddress{
+    
+    return [self  getIPAddress:YES];
+}
 
 - (NSString *)getIPAddress:(BOOL)preferIPv4
 {
@@ -88,6 +58,7 @@
      } ];
     return address ? address : @"0.0.0.0";
 }
+
 - (NSDictionary *)getIPAddresses
 {
     NSMutableDictionary *addresses = [NSMutableDictionary dictionaryWithCapacity:8];
@@ -127,5 +98,33 @@
     }
     return [addresses count] ? addresses : nil;
 }
+
+
+
+
+
+#pragma mark - 方法二
+-(void)currentIPAdressDetailInfo{
+    
+    InitAddresses();
+    GetIPAddresses();
+    GetHWAddresses();
+    
+    int i;
+    //NSString *deviceIP = nil;
+    for (i=0; i<MAXADDRS; ++i)
+    {
+        static unsigned long localHost = 0x7F000001;            // 127.0.0.1
+        unsigned long theAddr;
+        
+        theAddr = ip_addrs[i];
+        
+        if (theAddr == 0) break;
+        if (theAddr == localHost) continue;
+        
+        NSLog(@"Name: %s  MAC: %s  IP: %s\n", if_names[i], hw_addrs[i], ip_names[i]);
+    }
+}
+
 
 @end

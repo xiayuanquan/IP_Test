@@ -8,14 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		044662BA1D38CEC50023A579 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 044662B91D38CEC50023A579 /* main.m */; };
-		044662BD1D38CEC50023A579 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 044662BC1D38CEC50023A579 /* AppDelegate.m */; };
-		044662C01D38CEC50023A579 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044662BF1D38CEC50023A579 /* ViewController.m */; };
 		044662C31D38CEC50023A579 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044662C11D38CEC50023A579 /* Main.storyboard */; };
 		044662C51D38CEC50023A579 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044662C41D38CEC50023A579 /* Assets.xcassets */; };
 		044662C81D38CEC50023A579 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044662C61D38CEC50023A579 /* LaunchScreen.storyboard */; };
 		044662D31D38CEC60023A579 /* IP_TestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 044662D21D38CEC60023A579 /* IP_TestTests.m */; };
 		044662DE1D38CEC60023A579 /* IP_TestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 044662DD1D38CEC60023A579 /* IP_TestUITests.m */; };
-		044662ED1D38CF0B0023A579 /* IPAddress.c in Sources */ = {isa = PBXBuildFile; fileRef = 044662EB1D38CF0B0023A579 /* IPAddress.c */; };
+		E4D2DDAC1DFA7C4F0079A678 /* IPToolManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D2DDAB1DFA7C4F0079A678 /* IPToolManager.m */; };
+		E4D2DDAF1DFA7CBC0079A678 /* IPAddress.c in Sources */ = {isa = PBXBuildFile; fileRef = E4D2DDAD1DFA7CBC0079A678 /* IPAddress.c */; };
+		E4D2DDB51DFA7FCA0079A678 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D2DDB21DFA7FCA0079A678 /* AppDelegate.m */; };
+		E4D2DDB61DFA7FCA0079A678 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D2DDB41DFA7FCA0079A678 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,10 +39,6 @@
 /* Begin PBXFileReference section */
 		044662B51D38CEC50023A579 /* IP_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IP_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		044662B91D38CEC50023A579 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		044662BB1D38CEC50023A579 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		044662BC1D38CEC50023A579 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		044662BE1D38CEC50023A579 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		044662BF1D38CEC50023A579 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		044662C21D38CEC50023A579 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		044662C41D38CEC50023A579 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		044662C71D38CEC50023A579 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,8 +49,14 @@
 		044662D91D38CEC60023A579 /* IP_TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IP_TestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		044662DD1D38CEC60023A579 /* IP_TestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IP_TestUITests.m; sourceTree = "<group>"; };
 		044662DF1D38CEC60023A579 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		044662EB1D38CF0B0023A579 /* IPAddress.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = IPAddress.c; sourceTree = "<group>"; };
-		044662EC1D38CF0B0023A579 /* IPAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPAddress.h; sourceTree = "<group>"; };
+		E4D2DDAA1DFA7C4F0079A678 /* IPToolManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPToolManager.h; sourceTree = "<group>"; };
+		E4D2DDAB1DFA7C4F0079A678 /* IPToolManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPToolManager.m; sourceTree = "<group>"; };
+		E4D2DDAD1DFA7CBC0079A678 /* IPAddress.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = IPAddress.c; sourceTree = "<group>"; };
+		E4D2DDAE1DFA7CBC0079A678 /* IPAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPAddress.h; sourceTree = "<group>"; };
+		E4D2DDB11DFA7FCA0079A678 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E4D2DDB21DFA7FCA0079A678 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E4D2DDB31DFA7FCA0079A678 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E4D2DDB41DFA7FCA0079A678 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,17 +107,9 @@
 		044662B71D38CEC50023A579 /* IP_Test */ = {
 			isa = PBXGroup;
 			children = (
-				044662BB1D38CEC50023A579 /* AppDelegate.h */,
-				044662BC1D38CEC50023A579 /* AppDelegate.m */,
-				044662BE1D38CEC50023A579 /* ViewController.h */,
-				044662BF1D38CEC50023A579 /* ViewController.m */,
-				044662C11D38CEC50023A579 /* Main.storyboard */,
-				044662C41D38CEC50023A579 /* Assets.xcassets */,
-				044662C61D38CEC50023A579 /* LaunchScreen.storyboard */,
-				044662C91D38CEC50023A579 /* Info.plist */,
+				E4D2DDA91DFA7C4F0079A678 /* IPTool */,
+				E4D2DDB01DFA7FCA0079A678 /* SimpleDemo */,
 				044662B81D38CEC50023A579 /* Supporting Files */,
-				044662EB1D38CF0B0023A579 /* IPAddress.c */,
-				044662EC1D38CF0B0023A579 /* IPAddress.h */,
 			);
 			path = IP_Test;
 			sourceTree = "<group>";
@@ -122,6 +117,10 @@
 		044662B81D38CEC50023A579 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				044662C11D38CEC50023A579 /* Main.storyboard */,
+				044662C41D38CEC50023A579 /* Assets.xcassets */,
+				044662C61D38CEC50023A579 /* LaunchScreen.storyboard */,
+				044662C91D38CEC50023A579 /* Info.plist */,
 				044662B91D38CEC50023A579 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -143,6 +142,28 @@
 				044662DF1D38CEC60023A579 /* Info.plist */,
 			);
 			path = IP_TestUITests;
+			sourceTree = "<group>";
+		};
+		E4D2DDA91DFA7C4F0079A678 /* IPTool */ = {
+			isa = PBXGroup;
+			children = (
+				E4D2DDAD1DFA7CBC0079A678 /* IPAddress.c */,
+				E4D2DDAE1DFA7CBC0079A678 /* IPAddress.h */,
+				E4D2DDAA1DFA7C4F0079A678 /* IPToolManager.h */,
+				E4D2DDAB1DFA7C4F0079A678 /* IPToolManager.m */,
+			);
+			path = IPTool;
+			sourceTree = "<group>";
+		};
+		E4D2DDB01DFA7FCA0079A678 /* SimpleDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E4D2DDB11DFA7FCA0079A678 /* AppDelegate.h */,
+				E4D2DDB21DFA7FCA0079A678 /* AppDelegate.m */,
+				E4D2DDB31DFA7FCA0079A678 /* ViewController.h */,
+				E4D2DDB41DFA7FCA0079A678 /* ViewController.m */,
+			);
+			path = SimpleDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,10 +297,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				044662C01D38CEC50023A579 /* ViewController.m in Sources */,
-				044662BD1D38CEC50023A579 /* AppDelegate.m in Sources */,
+				E4D2DDB51DFA7FCA0079A678 /* AppDelegate.m in Sources */,
+				E4D2DDAC1DFA7C4F0079A678 /* IPToolManager.m in Sources */,
+				E4D2DDAF1DFA7CBC0079A678 /* IPAddress.c in Sources */,
 				044662BA1D38CEC50023A579 /* main.m in Sources */,
-				044662ED1D38CF0B0023A579 /* IPAddress.c in Sources */,
+				E4D2DDB61DFA7FCA0079A678 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
