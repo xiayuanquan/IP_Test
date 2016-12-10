@@ -27,7 +27,9 @@
 ### How to user api
 
     #import"IPManager.h"
-     
+    
+    #import "IPManager.h"
+     
 ### 方式一：此方法获取具体的ip地址   
      
      IPToolManager *ipManager = [IPToolManager sharedManager]; 
