@@ -37,5 +37,5 @@
 ### 方式二：此方法打印具体的ip详细信息
 
     IPToolManager *ipManager = [IPToolManager sharedManager];
-     
-    [ipManager currentIPAdressDetailInfo];
+    
+    [ipManager currentIPAdressDetailInfo];
