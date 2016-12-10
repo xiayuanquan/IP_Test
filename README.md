@@ -25,7 +25,6 @@
 
 ## 三、现在做了一下简单的封装，封装为工具类IPManager，现在只需要导入这个头文件就可以轻松获取设备的ip地址
 ### How to user api
-     #import"IPManager.h" 
      
      #import "IPManager.h"
      
