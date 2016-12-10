@@ -35,7 +35,7 @@
      NSLog(@"当前设备的ip地址：%@",[ipManager currentIpAddress]); 
       
 ### 方式二：此方法打印具体的ip详细信息
-
-    IPToolManager *ipManager = [IPToolManager sharedManager];
+    
+    IPToolManager *ipManager = [IPToolManager sharedManager];
     
     [ipManager currentIPAdressDetailInfo];
