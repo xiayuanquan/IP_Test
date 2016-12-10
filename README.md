@@ -24,18 +24,18 @@
 
 
 ## 三、现在做了一下简单的封装，封装为工具类IPManager，现在只需要导入这个头文件就可以轻松获取设备的ip地址
-### How to user api   
+### How to user api  
 
-     #import"IPManager.h"
+    #import"IPManager.h"
      
-### 方式一：此方法获取具体的ip地址
-
-     IPToolManager *ipManager = [IPToolManager sharedManager];  
+### 方式一：此方法获取具体的ip地址   
+     
+     IPToolManager *ipManager = [IPToolManager sharedManager]; 
      
      NSLog(@"当前设备的ip地址：%@",[ipManager currentIpAddress]); 
       
 ### 方式二：此方法打印具体的ip详细信息
-    
-     IPToolManager *ipManager = [IPToolManager sharedManager];
-    
-     [ipManager currentIPAdressDetailInfo];
+
+    IPToolManager *ipManager = [IPToolManager sharedManager];
+     
+    [ipManager currentIPAdressDetailInfo];
