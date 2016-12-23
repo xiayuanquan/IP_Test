@@ -23,7 +23,7 @@
 
 
 
-## 三、现在做了一下简单的封装，封装为工具类IPManager，现在只需要导入这个头文件就可以轻松获取设备的ip地址
+## 三、现在做了一下简单的封装，封装为工具类IPToolManager，现在只需要导入这个头文件就可以轻松获取设备的ip地址
 ### CocoaPods支持
 
     pod 'IPTool', '~> 1.0.0' 或者 pod search IPTool
@@ -32,7 +32,7 @@
 
 ### How to user api
      
-    #import "IPManager.h"
+    #import "IPToolManager.h"
      
 ### example1：此方法获取具体的ip地址   
      
