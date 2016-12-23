@@ -26,19 +26,19 @@
 ## 三、现在做了一下简单的封装，封装为工具类IPManager，现在只需要导入这个头文件就可以轻松获取设备的ip地址
 ### CocoaPods支持
 
-     pod search IPTool
+    pod 'IPTool', '~> 1.0.0' 或者 pod search IPTool
       
-![image](https://github.com/xiayuanquan/IP_Test/blob/master/IPDemo/IP_Test/source/test3.png)    
+![image](https://github.com/xiayuanquan/IP_Test/blob/master/IPDemo/IP_Test/source/test3.png) 
+
 ### How to user api
      
-     pod 'IPTool', '~> 1.0.0'
-     #import "IPManager.h"
+    #import "IPManager.h"
      
 ### example1：此方法获取具体的ip地址   
      
-     IPToolManager *ipManager = [IPToolManager sharedManager]; 
+    IPToolManager *ipManager = [IPToolManager sharedManager]; 
      
-     NSLog(@"当前设备的ip地址：%@",[ipManager currentIpAddress]); 
+    NSLog(@"当前设备的ip地址：%@",[ipManager currentIpAddress]); 
       
 ### example2：此方法打印具体的ip详细信息
     
