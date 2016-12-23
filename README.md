@@ -11,11 +11,11 @@
 ## 二、获取ip地址用到了有两套方法，如下：
 -----------------------
    
-### 方法一：单独创建一个c文件，写一套方法去获取,效果图如下：
+### 方法一：使用一套C的方法去获取IP地址,效果图如下：
 
 ![image](https://github.com/xiayuanquan/IP_Test/blob/master/IPDemo/IP_Test/source/test1.png)
 
-### 方法二：直接在ViewController.m中写获取ip地址的方法，该方法简单，而且能实时监测IP地址的变化，效果图如下：
+### 方法二：使用一套OC的方法去获取IP地址，该方法简单，能实时监测IP地址的变化，效果图如下：
 
     stackoverflow参考地址为:http://stackoverflow.com/questions/7072989/iphone-ipad-how-to-get-my-ip-address-programmatically
     
@@ -24,6 +24,12 @@
 
 
 ## 三、现在做了一下简单的封装，封装为工具类IPManager，现在只需要导入这个头文件就可以轻松获取设备的ip地址
+### CocoaPods支持
+
+    pod 'IPTool', '~> 1.0.0' 或者 pod search IPTool
+    
+![image](https://github.com/xiayuanquan/IP_Test/blob/master/IPDemo/IP_Test/source/test3.png)    
+   
 ### How to user api
      
      #import "IPManager.h"
