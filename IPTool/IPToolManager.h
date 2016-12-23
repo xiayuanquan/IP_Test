@@ -2,12 +2,12 @@
 //  IPToolManager.h
 //  BiaoJiePay
 //
-//  Created by mac on 16/11/22.
+//  Created by 夏远全 on 16/11/22.
 //  Copyright © 2016年 xiayuanquan. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import "IPAddress.h"
+
 
 @interface IPToolManager : NSObject
 /**

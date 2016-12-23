@@ -1,12 +1,14 @@
 //
-//  IPAddress.c
+//  IPAddressConfig.m
 //  IP_Test
 //
-//  Created by mac on 16/7/15.
+//  Created by 夏远全 on 16/12/23.
 //  Copyright © 2016年 xiayuanquan. All rights reserved.
 //
 
-#include "IPAddress.h"
+#import "IPAddressConfig.h"
+
+@implementation IPAddressConfig
 
 char *if_names[MAXADDRS];
 char *ip_names[MAXADDRS];
@@ -194,3 +196,6 @@ void GetHWAddresses()
     }
     close(sockfd);
 }
+
+
+@end

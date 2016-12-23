@@ -13,8 +13,8 @@
 		044662C81D38CEC50023A579 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044662C61D38CEC50023A579 /* LaunchScreen.storyboard */; };
 		044662D31D38CEC60023A579 /* IP_TestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 044662D21D38CEC60023A579 /* IP_TestTests.m */; };
 		044662DE1D38CEC60023A579 /* IP_TestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 044662DD1D38CEC60023A579 /* IP_TestUITests.m */; };
+		E44A85B31E0CEFE5004CCE68 /* IPAddressConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E44A85B21E0CEFE5004CCE68 /* IPAddressConfig.m */; };
 		E4D2DDAC1DFA7C4F0079A678 /* IPToolManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D2DDAB1DFA7C4F0079A678 /* IPToolManager.m */; };
-		E4D2DDAF1DFA7CBC0079A678 /* IPAddress.c in Sources */ = {isa = PBXBuildFile; fileRef = E4D2DDAD1DFA7CBC0079A678 /* IPAddress.c */; };
 		E4D2DDB51DFA7FCA0079A678 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D2DDB21DFA7FCA0079A678 /* AppDelegate.m */; };
 		E4D2DDB61DFA7FCA0079A678 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D2DDB41DFA7FCA0079A678 /* ViewController.m */; };
 		E4D2DDBA1DFA81830079A678 /* test1.png in Resources */ = {isa = PBXBuildFile; fileRef = E4D2DDB81DFA81830079A678 /* test1.png */; };
@@ -51,10 +51,10 @@
 		044662D91D38CEC60023A579 /* IP_TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IP_TestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		044662DD1D38CEC60023A579 /* IP_TestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IP_TestUITests.m; sourceTree = "<group>"; };
 		044662DF1D38CEC60023A579 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E44A85B11E0CEFE5004CCE68 /* IPAddressConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPAddressConfig.h; sourceTree = "<group>"; };
+		E44A85B21E0CEFE5004CCE68 /* IPAddressConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPAddressConfig.m; sourceTree = "<group>"; };
 		E4D2DDAA1DFA7C4F0079A678 /* IPToolManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPToolManager.h; sourceTree = "<group>"; };
 		E4D2DDAB1DFA7C4F0079A678 /* IPToolManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPToolManager.m; sourceTree = "<group>"; };
-		E4D2DDAD1DFA7CBC0079A678 /* IPAddress.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = IPAddress.c; sourceTree = "<group>"; };
-		E4D2DDAE1DFA7CBC0079A678 /* IPAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPAddress.h; sourceTree = "<group>"; };
 		E4D2DDB11DFA7FCA0079A678 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E4D2DDB21DFA7FCA0079A678 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E4D2DDB31DFA7FCA0079A678 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -152,8 +152,8 @@
 		E4D2DDA91DFA7C4F0079A678 /* IPTool */ = {
 			isa = PBXGroup;
 			children = (
-				E4D2DDAD1DFA7CBC0079A678 /* IPAddress.c */,
-				E4D2DDAE1DFA7CBC0079A678 /* IPAddress.h */,
+				E44A85B11E0CEFE5004CCE68 /* IPAddressConfig.h */,
+				E44A85B21E0CEFE5004CCE68 /* IPAddressConfig.m */,
 				E4D2DDAA1DFA7C4F0079A678 /* IPToolManager.h */,
 				E4D2DDAB1DFA7C4F0079A678 /* IPToolManager.m */,
 			);
@@ -315,7 +315,7 @@
 			files = (
 				E4D2DDB51DFA7FCA0079A678 /* AppDelegate.m in Sources */,
 				E4D2DDAC1DFA7C4F0079A678 /* IPToolManager.m in Sources */,
-				E4D2DDAF1DFA7CBC0079A678 /* IPAddress.c in Sources */,
+				E44A85B31E0CEFE5004CCE68 /* IPAddressConfig.m in Sources */,
 				044662BA1D38CEC50023A579 /* main.m in Sources */,
 				E4D2DDB61DFA7FCA0079A678 /* ViewController.m in Sources */,
 			);
@@ -456,11 +456,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = IP_Test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.BYHR.IP-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -468,11 +471,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = IP_Test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.BYHR.IP-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;
 		};

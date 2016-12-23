@@ -2,14 +2,13 @@
 //  IPToolManager.m
 //  BiaoJiePay
 //
-//  Created by mac on 16/11/22.
+//  Created by 夏远全 on 16/11/22.
 //  Copyright © 2016年 xiayuanquan. All rights reserved.
 //
 
 #import "IPToolManager.h"
-#include <ifaddrs.h>
-#include <arpa/inet.h>
-#include <net/if.h>
+#import "IPAddressConfig.h"
+
 #define IOS_CELLULAR    @"pdp_ip0"
 #define IOS_WIFI        @"en0"
 #define IOS_VPN         @"utun0"

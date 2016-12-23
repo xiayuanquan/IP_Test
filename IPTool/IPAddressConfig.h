@@ -1,14 +1,12 @@
 //
-//  IPAddress.h
+//  IPAddressConfig.h
 //  IP_Test
 //
-//  Created by mac on 16/7/15.
+//  Created by 夏远全 on 16/12/23.
 //  Copyright © 2016年 xiayuanquan. All rights reserved.
 //
 
-
-#ifndef IPAddress_h
-#define IPAddress_h
+#import <Foundation/Foundation.h>
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -25,12 +23,17 @@
 #include <errno.h>
 #include <net/if_dl.h>
 #include <net/ethernet.h>
+#include <ifaddrs.h>
+#include <arpa/inet.h>
 
 #define BUFFERSIZE  4000
 #define MAXADDRS    32
 #define min(a,b)    ((a) < (b) ? (a) : (b))
 #define max(a,b)    ((a) > (b) ? (a) : (b))
 
+@interface IPAddressConfig : NSObject
+
+// extern
 extern char *if_names[MAXADDRS];
 extern char *ip_names[MAXADDRS];
 extern char *hw_addrs[MAXADDRS];
@@ -42,5 +45,4 @@ void FreeAddresses();
 void GetIPAddresses();
 void GetHWAddresses();
 
-
-#endif /* IPAddress_h */
+@end
